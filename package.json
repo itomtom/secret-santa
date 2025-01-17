@@ -1,0 +1,21 @@
+{
+  "name": "secret-santa",
+  "version": "1.0.0",
+  "description": "Secret Santa App that draws the complete list of relationships ensuring that each participant receives a gift and has to offer one while taking into account their potential blacklist",
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w server\" \"npm run dev -w client\"",
+    "lint": "npm run lint --workspaces",
+    "format": "npm run format --workspaces",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces"
+  },
+  "author": "Thomas Truong",
+  "license": "ISC",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
